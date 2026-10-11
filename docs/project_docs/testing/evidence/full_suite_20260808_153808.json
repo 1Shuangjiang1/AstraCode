@@ -1,0 +1,276 @@
+{
+  "suite": "s_full real DeepSeek full acceptance",
+  "started_at": "2026-08-08T15:38:08+08:00",
+  "model": "deepseek-v4-flash",
+  "temporary_root": "<TEST_ROOT>\\s_full_live_full_f2nmdp9h",
+  "cases": [
+    {
+      "name": "crud_todo_and_command",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 12.12,
+      "tools": {
+        "set_working_directory": 1,
+        "TodoWrite": 4,
+        "write_file": 2,
+        "bash": 1,
+        "read_file": 1
+      },
+      "missing_tools": {},
+      "assertion": "calculator.py、test_calculator.py 存在，Todo 全部完成",
+      "model": {
+        "calls": 6,
+        "failures": 0,
+        "duration_ms": 11357,
+        "stop_reasons": {
+          "tool_use": 5,
+          "end_turn": 1
+        }
+      }
+    },
+    {
+      "name": "persistent_tasks_and_skill",
+      "status": "failed",
+      "agent_status": "incomplete",
+      "seconds": 40.07,
+      "tools": {
+        "task_create": 2,
+        "task_list": 1,
+        "task_update": 1,
+        "task_get": 1,
+        "load_skill": 2,
+        "write_file": 1,
+        "delete_file": 1,
+        "edit_file": 1
+      },
+      "missing_tools": {},
+      "assertion": "至少两个持久任务，且存在 completed 任务",
+      "model": {
+        "calls": 13,
+        "failures": 0,
+        "duration_ms": 40039,
+        "stop_reasons": {
+          "tool_use": 9,
+          "end_turn": 4
+        }
+      }
+    },
+    {
+      "name": "single_explore_subagent",
+      "status": "failed",
+      "agent_status": "round_limit",
+      "seconds": 138.07,
+      "tools": {
+        "list_directory": 3,
+        "task": 1,
+        "write_file": 4,
+        "set_working_directory": 1,
+        "path_exists": 1,
+        "bash": 1,
+        "read_file": 1,
+        "edit_file": 1
+      },
+      "missing_tools": {},
+      "assertion": "单子 Agent 报告存在并包含 parse 分析",
+      "model": {
+        "calls": 14,
+        "failures": 0,
+        "duration_ms": 95174,
+        "stop_reasons": {
+          "tool_use": 12,
+          "end_turn": 2
+        }
+      }
+    },
+    {
+      "name": "multiple_explore_subagents",
+      "status": "failed",
+      "agent_status": "round_limit",
+      "seconds": 198.66,
+      "tools": {
+        "set_working_directory": 1,
+        "list_directory": 2,
+        "task": 2,
+        "write_file": 4,
+        "path_exists": 2,
+        "bash": 1,
+        "read_file": 1,
+        "edit_file": 1,
+        "delete_file": 1
+      },
+      "missing_tools": {},
+      "assertion": "多子 Agent 报告包含两个独立审查章节",
+      "model": {
+        "calls": 14,
+        "failures": 0,
+        "duration_ms": 107096,
+        "stop_reasons": {
+          "tool_use": 12,
+          "end_turn": 2
+        }
+      }
+    },
+    {
+      "name": "background_task",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 7.51,
+      "tools": {
+        "set_working_directory": 1,
+        "background_run": 1,
+        "check_background": 4,
+        "read_file": 1
+      },
+      "missing_tools": {},
+      "assertion": "后台命令完成且结果文件内容正确",
+      "model": {
+        "calls": 8,
+        "failures": 0,
+        "duration_ms": 7499,
+        "stop_reasons": {
+          "tool_use": 7,
+          "end_turn": 1
+        }
+      }
+    },
+    {
+      "name": "multiple_teammates",
+      "status": "failed",
+      "agent_status": "round_limit",
+      "seconds": 46.57,
+      "tools": {
+        "spawn_teammate": 2,
+        "list_teammates": 5,
+        "path_exists": 7,
+        "bash": 1,
+        "read_file": 5,
+        "write_file": 3,
+        "list_directory": 1
+      },
+      "missing_tools": {},
+      "assertion": "两个真实 teammate 均创建了各自文件",
+      "model": {
+        "calls": 14,
+        "failures": 0,
+        "duration_ms": 40719,
+        "stop_reasons": {
+          "tool_use": 12,
+          "end_turn": 2
+        }
+      }
+    },
+    {
+      "name": "plan_readonly_then_execute",
+      "status": "failed",
+      "agent_status": "round_limit",
+      "seconds": 59.63,
+      "plan": {
+        "title": "新增 plan_feature.py 的 slugify 函数及断言测试",
+        "steps": 2,
+        "readonly": true
+      },
+      "tools": {
+        "list_directory": 4,
+        "set_working_directory": 1,
+        "read_file": 9,
+        "TodoWrite": 2,
+        "write_file": 3,
+        "path_exists": 2,
+        "bash": 1
+      },
+      "model": {
+        "calls": 18,
+        "failures": 0,
+        "duration_ms": 58864,
+        "stop_reasons": {
+          "tool_use": 16,
+          "end_turn": 2
+        }
+      },
+      "assertion": "Plan 阶段无写入，批准执行后代码和测试均存在"
+    },
+    {
+      "name": "chat_mode_directory_selection",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 3.55,
+      "tools": {
+        "set_working_directory": 1,
+        "write_file": 1,
+        "read_file": 1
+      },
+      "missing_tools": {},
+      "assertion": "聊天模式先选择目录，再成功写入文件",
+      "model": {
+        "calls": 4,
+        "failures": 0,
+        "duration_ms": 3536,
+        "stop_reasons": {
+          "tool_use": 3,
+          "end_turn": 1
+        }
+      }
+    },
+    {
+      "name": "permission_boundaries",
+      "status": "passed",
+      "seconds": 0.0,
+      "assertion": "安全模式拒绝写入；审批模式仅高风险询问；完全访问仍拦截 critical",
+      "approval_prompts": [
+        {
+          "tool": "read_file",
+          "risk": "HIGH",
+          "actor": "lead"
+        }
+      ]
+    },
+    {
+      "name": "automatic_naming",
+      "status": "passed",
+      "seconds": 1.49,
+      "provider_model": "deepseek-ai/DeepSeek-V4-Flash",
+      "title": "测试Todo与子Agent功能"
+    }
+  ],
+  "cleaned": true,
+  "trace_totals": {
+    "tools": {
+      "set_working_directory": 5,
+      "TodoWrite": 6,
+      "write_file": 17,
+      "bash": 5,
+      "read_file": 18,
+      "task_create": 2,
+      "task_list": 1,
+      "task_update": 1,
+      "task_get": 1,
+      "load_skill": 2,
+      "delete_file": 2,
+      "edit_file": 3,
+      "list_directory": 10,
+      "task": 3,
+      "path_exists": 12,
+      "background_run": 1,
+      "check_background": 4,
+      "spawn_teammate": 2,
+      "list_teammates": 5
+    },
+    "model": {
+      "calls": 87,
+      "failures": 0,
+      "duration_ms": 360748,
+      "stop_reasons": {
+        "tool_use": 73,
+        "end_turn": 14
+      }
+    },
+    "protocol_repairs": 0,
+    "tool_failures": 22
+  },
+  "finished_at": "2026-08-08T15:46:42+08:00",
+  "summary": {
+    "passed": 5,
+    "failed": 5,
+    "total": 10
+  }
+}

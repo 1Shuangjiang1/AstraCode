@@ -1,0 +1,19 @@
+{
+  "suite": "AstraCode forced Todo real API",
+  "workspace": "<TEST_ROOT>\\astracode_todo_button_7ebve8m2",
+  "status": "round_limit",
+  "tools": [
+    "TodoWrite",
+    "set_working_directory",
+    "list_directory",
+    "TodoWrite",
+    "TodoWrite",
+    "path_exists",
+    "TodoWrite",
+    "TodoWrite"
+  ],
+  "todo_calls": 5,
+  "file_created": false,
+  "passed": false,
+  "cleaned": true
+}

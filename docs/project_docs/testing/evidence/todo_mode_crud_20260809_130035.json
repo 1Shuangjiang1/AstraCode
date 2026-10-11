@@ -1,0 +1,25 @@
+{
+  "suite": "AstraCode host-enforced Todo real API CRUD",
+  "timestamp": "2026-08-09T13:00:35+08:00",
+  "provider": "DeepSeek (configured application provider)",
+  "cases": [
+    {
+      "name": "sidecar_pipeline",
+      "seconds": 37.82,
+      "session_todo_mode": true,
+      "required_evidence": [
+        "mutation"
+      ],
+      "forbidden_tools": [],
+      "todo_updates": 4,
+      "final_todo_count": 4,
+      "final_todos_completed": true,
+      "blocked_as_read_only": false,
+      "task_completed": true,
+      "outcome_ok": true,
+      "passed": true,
+      "cleaned": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,1008 @@
+{
+  "source_version": "0.8.1",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 1401,
+      "sha256": "3610bc7d00bb0258f5e18281beea5d0d6add4312a8d9517f1249e8a70eec2fce"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 730,
+      "sha256": "5e32ce4363d02c912b7587258dc3b743743cc0807a12225184947bf4215a8d9c"
+    },
+    {
+      "path": ".github/workflows/release-windows.yml",
+      "bytes": 1144,
+      "sha256": "f6b70c9095028b2d74910e18a17edf9ac3701ac4bdd02ff323fb53d1fcf4e753"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 532,
+      "sha256": "25bc6fc8ffad2af075b8d736c65029a9511c92a92a0ea6a50b0b04fbe602b6a7"
+    },
+    {
+      "path": "agent_harness/__init__.py",
+      "bytes": 120,
+      "sha256": "3d327e12908bd614ce8ca1041409d03bb4abb1b95bacbb1c3dc610b21a3b2a0b"
+    },
+    {
+      "path": "agent_harness/agents.py",
+      "bytes": 14969,
+      "sha256": "bd657e6d9f553038457720543534b3c82702604a3b6773b4ae9e4821f969742f"
+    },
+    {
+      "path": "agent_harness/app.py",
+      "bytes": 31348,
+      "sha256": "26922895f1a3a2f17b6e29de175cdf6f02c6bea1f6e99cf769e8c6ae5c1b15d2"
+    },
+    {
+      "path": "agent_harness/change_tracking.py",
+      "bytes": 10793,
+      "sha256": "2d0bd0d41ad0827743c29ea6f15d4d8e08336070abe3874f9534a12aeb476cbc"
+    },
+    {
+      "path": "agent_harness/completion.py",
+      "bytes": 12782,
+      "sha256": "81018f2cf37005eb022736935143bce704d2c0ced4907e7d15856abd1a353b35"
+    },
+    {
+      "path": "agent_harness/concurrency.py",
+      "bytes": 1231,
+      "sha256": "02d629b856d18a2c5a3cb54ddcdd4da6fda8ba519ed1aaa7c32d81a9f7cd4ca7"
+    },
+    {
+      "path": "agent_harness/context.py",
+      "bytes": 6965,
+      "sha256": "77dc92d63661f3d83dc2a5a79f37d790c8f3c0314b2c1297df871909d77e9356"
+    },
+    {
+      "path": "agent_harness/fake_client.py",
+      "bytes": 1726,
+      "sha256": "eb164d13f3dbf0f3ad41df2a1ee9dd6c5a2eb7821379f592992c6dfe499685eb"
+    },
+    {
+      "path": "agent_harness/memory.py",
+      "bytes": 8572,
+      "sha256": "2140520259cf5ea72563511a3fa441c936d71380809cb1d84ca33036b78a46ad"
+    },
+    {
+      "path": "agent_harness/message_protocol.py",
+      "bytes": 4716,
+      "sha256": "404b895c558c67759348e0f7529c712b0c5529fe7bb2d1e4973e45cc71b2f300"
+    },
+    {
+      "path": "agent_harness/naming.py",
+      "bytes": 3296,
+      "sha256": "8fd8fbdc1f527fbd9b0be2ddc06f55e095793e56b2b9e7f1eb40d86277d89f5d"
+    },
+    {
+      "path": "agent_harness/permissions.py",
+      "bytes": 8001,
+      "sha256": "c75931d2c100cbf0f01fef7c27aed66b9ed49d5314220d4549734f3cc6dfe58d"
+    },
+    {
+      "path": "agent_harness/planning.py",
+      "bytes": 10287,
+      "sha256": "2935859f91f3227023a6f402d1d4341d1a7c86adff32892b7757a6a392059f5a"
+    },
+    {
+      "path": "agent_harness/schemas.py",
+      "bytes": 4820,
+      "sha256": "fd65b5e884a6be3eaf0e44cc6c9046bf95c6ec93772149127b3823a3c88ba525"
+    },
+    {
+      "path": "agent_harness/session_store.py",
+      "bytes": 34649,
+      "sha256": "b5dfecaaf47695b8eb17c99a8886caed83ae207866b5e32d7bbc838d33f0ca15"
+    },
+    {
+      "path": "agent_harness/settings.py",
+      "bytes": 6572,
+      "sha256": "e12fb83dfa1274cd78c725d88bdd311f7909b17a900ecadb629bf8f70323db83"
+    },
+    {
+      "path": "agent_harness/sidecar.py",
+      "bytes": 63911,
+      "sha256": "74067211696cee1e3e32bcf3096b73bc1d8df823a0929ee204a4c7569cffd500"
+    },
+    {
+      "path": "agent_harness/state.py",
+      "bytes": 9087,
+      "sha256": "cc09e2af23bf5fd322e43fa63a94afe040c1975069dde6c50f9028baefd9271b"
+    },
+    {
+      "path": "agent_harness/tool_validation.py",
+      "bytes": 2030,
+      "sha256": "4470a9c7fb5aa6c805ee1bce80a314970da72312709d37aecebfa6be58aebf18"
+    },
+    {
+      "path": "agent_harness/ui.py",
+      "bytes": 4199,
+      "sha256": "69d9c5dabddb83c79798ca7fb989b17ea74e4f06b006c91f26f1e878107faf71"
+    },
+    {
+      "path": "agent_harness/verifier.py",
+      "bytes": 9126,
+      "sha256": "b0e7c4287b7bbe51ebe083a80d04664d18f2c2dd03326dfd2e16c0a1a17f8e57"
+    },
+    {
+      "path": "agent_harness/workspace.py",
+      "bytes": 15333,
+      "sha256": "64d9337e1f9a559b20d77e083fe887b187c528e556b19ce114a97a80bb460107"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 994,
+      "sha256": "a2e5eb6bba895be51ab5098c0d830f22ef0be610c69a71289f2de662c6c0fd95"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 1089,
+      "sha256": "5b8e4d550dd3eadb8223eeb8783657a3db0c6277f90711a666f25625aa78b1e9"
+    },
+    {
+      "path": "desktop/app-icon.svg",
+      "bytes": 581,
+      "sha256": "b73db0b29cb0b6db63b61dcb610d9de691ffde73f6c1d339fdd12bb47d53ad99"
+    },
+    {
+      "path": "desktop/index.html",
+      "bytes": 372,
+      "sha256": "d5b9effd00eee474c6f1f07705db7a2f56cc0e7b57e87aff892e19e423aca354"
+    },
+    {
+      "path": "desktop/package-lock.json",
+      "bytes": 109960,
+      "sha256": "03b576b881e173888bdb5d5b1fe2e8943047e21c848135e07e53fe6a746c5f99"
+    },
+    {
+      "path": "desktop/package.json",
+      "bytes": 812,
+      "sha256": "678d7e9928d433a427a1c331896febc7e276ab194d734c1098087499dfb9a739"
+    },
+    {
+      "path": "desktop/README.md",
+      "bytes": 2482,
+      "sha256": "c7fb127689190401f9b1814589fef0f8c9f42de152554c78924ae77f7828f1b2"
+    },
+    {
+      "path": "desktop/src/AgentMonitor.tsx",
+      "bytes": 3326,
+      "sha256": "8c095b2e68f81bedfe2a6ace2799e1afac259699d168c84cfaff848185b90fd2"
+    },
+    {
+      "path": "desktop/src/App.tsx",
+      "bytes": 67853,
+      "sha256": "f569320f016493672e9915cdc5ae831bf2355d44b35b03a4764b45cc26cf0f18"
+    },
+    {
+      "path": "desktop/src/DiffPreview.tsx",
+      "bytes": 4646,
+      "sha256": "d656ec5370d6caee912bd93ecb990fa53e4d6b5a362388c8944eaa1bc524df8f"
+    },
+    {
+      "path": "desktop/src/HelpPanel.tsx",
+      "bytes": 7576,
+      "sha256": "fb3df48d825d8b497ecd8c73f2115b8f81a6129933049641433bbc22af86c4b3"
+    },
+    {
+      "path": "desktop/src/main.tsx",
+      "bytes": 170,
+      "sha256": "8f984a7fdc84a7124c3c86742c61e12946b5844d8877f291e3dc4a798727e459"
+    },
+    {
+      "path": "desktop/src/OnboardingGuide.tsx",
+      "bytes": 8108,
+      "sha256": "ec7b33a1b48c272a493f94b2205479fecf47b1f581508e5c59f5e6b3ac824b24"
+    },
+    {
+      "path": "desktop/src/PromptTemplateMenu.tsx",
+      "bytes": 4405,
+      "sha256": "49b4dc7e2beceaeb762707f18ad3db92e065a787c9ca843d055ec0917b662987"
+    },
+    {
+      "path": "desktop/src/promptTemplates.ts",
+      "bytes": 8397,
+      "sha256": "b95aa64ccccc5ed16a5128f302d68ef3048e3df247a38f06659706366094c7ba"
+    },
+    {
+      "path": "desktop/src/SettingsPanel.tsx",
+      "bytes": 5195,
+      "sha256": "badc1f720295e02f55ba124440f776f91e2058bd2bd4428a10153ecf99b459f1"
+    },
+    {
+      "path": "desktop/src/SkillCommandMenu.tsx",
+      "bytes": 1843,
+      "sha256": "b9478543696031a1312234fea0894f2b122fc493f7b58a27287f1f25b3225eab"
+    },
+    {
+      "path": "desktop/src/styles.css",
+      "bytes": 90796,
+      "sha256": "59ab1474c85421423c2d5cde4c4cb87a0009184836c83ea982687c349a129be4"
+    },
+    {
+      "path": "desktop/src/transport.ts",
+      "bytes": 16533,
+      "sha256": "eb8ff4b8b0f741c58493c91863ffd1f013b5e3aa685b7be18875639ce7a74300"
+    },
+    {
+      "path": "desktop/src/types.ts",
+      "bytes": 4234,
+      "sha256": "8a6aa1501d2515564cdf4dbedd0a78975332871b561858c5568dd02e19d7f9eb"
+    },
+    {
+      "path": "desktop/src/vite-env.d.ts",
+      "bytes": 66,
+      "sha256": "afb9fe02bae081a30f6380cf7d190e2890244759acc483e332679117e53bc497"
+    },
+    {
+      "path": "desktop/src-tauri/build.rs",
+      "bytes": 39,
+      "sha256": "487059eaf8a947b80f20a9aacac038a5047b2ad69d2401b827376c67d6fe847f"
+    },
+    {
+      "path": "desktop/src-tauri/capabilities/main.json",
+      "bytes": 252,
+      "sha256": "10e94bf4800541de2f635d3c16d660d0230f923961cfd8e4e7ca3eb2039f0f5a"
+    },
+    {
+      "path": "desktop/src-tauri/Cargo.lock",
+      "bytes": 115783,
+      "sha256": "e05fa790488c2206c97ef246018c7cab6b597b02a530bb52a6e3c82be21e0b52"
+    },
+    {
+      "path": "desktop/src-tauri/Cargo.toml",
+      "bytes": 443,
+      "sha256": "e7c6b2caeb7a61bc951fc145079b4d4613ca7f5650f451a2e50e9b596cd40f78"
+    },
+    {
+      "path": "desktop/src-tauri/icons/128x128.png",
+      "bytes": 2518,
+      "sha256": "cb2c37bc1900de2c00ab9bc937adabda9c977fb6fe5bc22ed2ab5b3629064e3d"
+    },
+    {
+      "path": "desktop/src-tauri/icons/128x128@2x.png",
+      "bytes": 4560,
+      "sha256": "644b4de0759f23901054532e87515193df0653233fe0da57ed8e0c4eb1d0ca84"
+    },
+    {
+      "path": "desktop/src-tauri/icons/32x32.png",
+      "bytes": 720,
+      "sha256": "8576e65b71da87aa4d35cb91b017388baad86410dfd0e419d163d90e8cd8dc51"
+    },
+    {
+      "path": "desktop/src-tauri/icons/64x64.png",
+      "bytes": 1327,
+      "sha256": "96651e07f29ad2bdeef6a2606f42353646485dc40f96276668903f0c29d38471"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-anydpi-v26/ic_launcher.xml",
+      "bytes": 261,
+      "sha256": "760d4b8a06bf7163dd010c33ad2cac9e4a75fa0177afaba042f83e311eef0c3e"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+      "bytes": 1649,
+      "sha256": "83920f7a3e92f7f566ec9dfbf725bbb4f0863f2e4361aaf0f6c10ca627aa7610"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+      "bytes": 3127,
+      "sha256": "e65c70c3a57a1df0c429cfc0fd77375d247fa8e1429d43ce9ee5cae6c161b808"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+      "bytes": 1539,
+      "sha256": "150761d2c66970e43f9f2c70c432c747d0e2d999ce47162c375c7f9050e3732b"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+      "bytes": 1602,
+      "sha256": "7efcc0d56fb4cb999d7a59416a2c4bb4042a8e5d73056ede2175088c9010dc38"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+      "bytes": 2101,
+      "sha256": "a5ef5ed8395ed76f9dc5bfbb572c07d4de9e6f19c42703a85d2b2d7f489a83ef"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+      "bytes": 1481,
+      "sha256": "088d36dc345b0fa861a2537ab5a941bfa025f7e2dd51a25eb57bbe8d211f5550"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 3586,
+      "sha256": "91a3c9fe151d706e28c3c2974c755c0274b4c1bac951bb58e260d4dde7fe31a2"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+      "bytes": 4022,
+      "sha256": "ea9c6b529985614fcda4850d44f8cfb3a063b86e6d43d7e2f99aaa3e31a86198"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+      "bytes": 3153,
+      "sha256": "915a209e3a0c97309b6350cf9f4b1e595474b4550a19fff73c72c00de2e2e071"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 5498,
+      "sha256": "576e7b16fd3114a8449bfad2c9dea927874d13109fcfceaf5369108aff761e13"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "bytes": 5694,
+      "sha256": "f519b6baa440657d844a2ffe431057c66e8f15806dfb712ac55b38899e310d37"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+      "bytes": 4877,
+      "sha256": "b11dfc3d59b2ee65f5077dc11dc4e74b5f3193f8036a7a71439529d292a13a80"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 7374,
+      "sha256": "82ed5b481afcf04d75b5533fd43ae6e4bc07a40c3e2a000a7ed1b8b523da602d"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "bytes": 7694,
+      "sha256": "e1217752decbea3443bda32906c28ee99ebc74ccf63c75d9adfbd27e0cab4ab2"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+      "bytes": 6535,
+      "sha256": "01a54196a6d6570ccbd44065bcd41098d97b9625e91b48c4a2cb8c22842060ec"
+    },
+    {
+      "path": "desktop/src-tauri/icons/android/values/ic_launcher_background.xml",
+      "bytes": 115,
+      "sha256": "0687336f0ccc6f7ee09c7c95110667c63b75931238df779a21af401fb864cd34"
+    },
+    {
+      "path": "desktop/src-tauri/icons/icon.icns",
+      "bytes": 55767,
+      "sha256": "9a6f49ad65171e6cbd2043069f990263eaa067aa003fb77366eabc86c3c71e05"
+    },
+    {
+      "path": "desktop/src-tauri/icons/icon.ico",
+      "bytes": 9650,
+      "sha256": "c57f3ed9caf79945ac77da399bb71b5a787a3f4e37b9e9603ea9ad177713d0df"
+    },
+    {
+      "path": "desktop/src-tauri/icons/icon.png",
+      "bytes": 8894,
+      "sha256": "6071c812f66a0dd843c14faf4d2fc95ab1a589c5dff6624a7ce85b82a137486d"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-20x20@1x.png",
+      "bytes": 512,
+      "sha256": "a811c5fda70f8a2419462e1b06ee710be1c39e0bf4f278f02746f72ecac92a69"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+      "bytes": 909,
+      "sha256": "0857a99640d3404f8dcce17ee99a58d9ea73922f45d08df83e33676cd0305767"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-20x20@2x.png",
+      "bytes": 909,
+      "sha256": "0857a99640d3404f8dcce17ee99a58d9ea73922f45d08df83e33676cd0305767"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-20x20@3x.png",
+      "bytes": 1320,
+      "sha256": "e3136410b05d2e6cd8a68e7fb6c46f506a4cc0ffe2bc53070b84d4c165715c2f"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-29x29@1x.png",
+      "bytes": 684,
+      "sha256": "2bb0b2abd567d8d725c56e3eb8d6f2fb9969e47b0fccd3d997004da753bd592d"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+      "bytes": 1199,
+      "sha256": "57fb3c1a7c315cb466b971923d8bf600c0d657f55e6f08785dc4dc1a8f20dd2a"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-29x29@2x.png",
+      "bytes": 1199,
+      "sha256": "57fb3c1a7c315cb466b971923d8bf600c0d657f55e6f08785dc4dc1a8f20dd2a"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-29x29@3x.png",
+      "bytes": 1845,
+      "sha256": "2907b0a377ffd17a16da927a4f4c19c7f0c5085762ce39a58cd755157665d309"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-40x40@1x.png",
+      "bytes": 909,
+      "sha256": "0857a99640d3404f8dcce17ee99a58d9ea73922f45d08df83e33676cd0305767"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+      "bytes": 1731,
+      "sha256": "cbe1c4f954630438d3693dcebb21a595d7d79a0e67cb17bf2ea6d2523267ddef"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-40x40@2x.png",
+      "bytes": 1731,
+      "sha256": "cbe1c4f954630438d3693dcebb21a595d7d79a0e67cb17bf2ea6d2523267ddef"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-40x40@3x.png",
+      "bytes": 2423,
+      "sha256": "0d2e2847fa7bbdded34ab8c6ed584b113dae47be50a8a345b95c637e6ad0ef9c"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-512@2x.png",
+      "bytes": 21312,
+      "sha256": "b38be6621f3629895edccf3747b99d2bfc12c2b360e1cb01ba8e27f93f5218b9"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-60x60@2x.png",
+      "bytes": 2423,
+      "sha256": "0d2e2847fa7bbdded34ab8c6ed584b113dae47be50a8a345b95c637e6ad0ef9c"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-60x60@3x.png",
+      "bytes": 3483,
+      "sha256": "8abbe22f819f81990c8016f97a5e0925f1a6a585ce4e68702e3f630c6b152b49"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-76x76@1x.png",
+      "bytes": 1606,
+      "sha256": "5d728034c98de70030c523633f160e26a245e8d36340d949249883cc423c27fb"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-76x76@2x.png",
+      "bytes": 3014,
+      "sha256": "920d842a23bb360d56655868a6cb75df1b5e6fe6e641ecc3ac63b752c5ad3dba"
+    },
+    {
+      "path": "desktop/src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+      "bytes": 3317,
+      "sha256": "aa9da3b1dcdb761a4aac11155ea466be697a761b549da52622d3770a35c2dcee"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square107x107Logo.png",
+      "bytes": 2197,
+      "sha256": "290e80d30d3b80e27daf39fc8e81ae056af0f27f7258c3124cdfb37a38cb0a7d"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square142x142Logo.png",
+      "bytes": 2749,
+      "sha256": "fb329472daf30d0b59af971f3e588ec7a5762292b2d25cf27e916d2b05309e48"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square150x150Logo.png",
+      "bytes": 2837,
+      "sha256": "e5ef9f69dedd2ec242e9ef00a5e57d7e34f3dc380a27936d8357825bd57227c4"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square284x284Logo.png",
+      "bytes": 5115,
+      "sha256": "d026259babd8ddafd63091eb04309d4d635a5f4f940a482770a798722289e1cd"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square30x30Logo.png",
+      "bytes": 698,
+      "sha256": "25454ea44623b603856059cca3a54921d1ecb36bd41f507af6f187a9587f934b"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square310x310Logo.png",
+      "bytes": 5462,
+      "sha256": "f04919def5e6f3eab57bfe3036e4a83c2c40a94f45e269fb47e47b57d904c47c"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square44x44Logo.png",
+      "bytes": 951,
+      "sha256": "83b967c1571159f54581f9667ab79dc7ab77b11840c56261b46114303e8d72a2"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square71x71Logo.png",
+      "bytes": 1495,
+      "sha256": "7137774ac6ba5d6c2420161b7e1970a5f4fa5799738045c699c24b18424374e3"
+    },
+    {
+      "path": "desktop/src-tauri/icons/Square89x89Logo.png",
+      "bytes": 1790,
+      "sha256": "477bbb98a8070d38c7837825fec5498a2963572619205e2ad7f61e5b45ebda03"
+    },
+    {
+      "path": "desktop/src-tauri/icons/StoreLogo.png",
+      "bytes": 1003,
+      "sha256": "954c6fe784cf026572367832163e25fbe9a212020b4b86f9eab0f6ed330d81cc"
+    },
+    {
+      "path": "desktop/src-tauri/src/main.rs",
+      "bytes": 8185,
+      "sha256": "f4eadac9511f1da00b3d9584b30c8d9e0b9966befa94c12a02230205f4147c67"
+    },
+    {
+      "path": "desktop/src-tauri/tauri.conf.json",
+      "bytes": 1115,
+      "sha256": "410f6ef6bd567134a1dbae88a77851ca0ee9d8c00648af710b69f088e529ed77"
+    },
+    {
+      "path": "desktop/tsconfig.app.json",
+      "bytes": 527,
+      "sha256": "f2406e21a2835c9d3645b8b2ff257ee7ceb2e2373a13dc4802390ec0fa4675bf"
+    },
+    {
+      "path": "desktop/tsconfig.json",
+      "bytes": 126,
+      "sha256": "ad28d132ee48d6e23917cf5827cace785d0fc01a44ca68b0dda51cc8c3fd3f52"
+    },
+    {
+      "path": "desktop/tsconfig.node.json",
+      "bytes": 242,
+      "sha256": "114d35054a4a0a7cdb8e740d733a5baac04d986ac33226f54e76c283da903970"
+    },
+    {
+      "path": "desktop/vite.config.ts",
+      "bytes": 287,
+      "sha256": "7a67bc1613288ae9db0da66eea22326dc20b733f39d2507e562bfe5c7e392e76"
+    },
+    {
+      "path": "docs/project_docs/architecture/AGENT_RUNTIME_AND_DIAGNOSTICS.md",
+      "bytes": 5999,
+      "sha256": "0bd65c4b38dea4d6d136e32787382bfd35efbcde077c79ce422f4efbd77e2848"
+    },
+    {
+      "path": "docs/project_docs/architecture/COMPLETION_GUARD.md",
+      "bytes": 4354,
+      "sha256": "362e9f630a55c75310613b34413ec132db718ed305b8094199f0ffaf396ee384"
+    },
+    {
+      "path": "docs/project_docs/architecture/CONTEXT_MODULE_DEVELOPMENT.md",
+      "bytes": 10054,
+      "sha256": "f41f46fe5c69c8a359b4fe24718dd6ec2e49715f0eb497e46a76655febadb84d"
+    },
+    {
+      "path": "docs/project_docs/architecture/MESSAGE_CONTEXT_AND_COMPACTION.md",
+      "bytes": 9357,
+      "sha256": "1cc1a3702c1e2a17f0e17097c34491eeb535f6e3b6a1b645d57725bdcc66e44c"
+    },
+    {
+      "path": "docs/project_docs/architecture/PERMISSION_BOUNDARIES.md",
+      "bytes": 5793,
+      "sha256": "aae18695b00094ea0ee3ba6c9f54a716bcf47aba2a718dd0f67aa0d2c50926d0"
+    },
+    {
+      "path": "docs/project_docs/architecture/PLAN_MODE_V1.md",
+      "bytes": 7948,
+      "sha256": "c4fc72802c8bb01126e8cc3b4d3c13d37ecca9f78ed7881ebf7047c6f8d79021"
+    },
+    {
+      "path": "docs/project_docs/architecture/SESSION_PERSISTENCE.md",
+      "bytes": 8424,
+      "sha256": "5616cf8cef29856160b7b39fdbb79ceedee69f342937e568121dcb9b2ef4f152"
+    },
+    {
+      "path": "docs/project_docs/architecture/TOOL_MESSAGE_PROTOCOL.md",
+      "bytes": 2360,
+      "sha256": "ba237ea5948a65f4f5769b5dd35b6c27e1b5427d48e8d61abce3a6bde7828139"
+    },
+    {
+      "path": "docs/project_docs/product/DEVELOPMENT_ROADMAP.md",
+      "bytes": 14160,
+      "sha256": "a7769a3b199bf584a2222017b1500ce79a7d369f5b123761c23833b6423d25a7"
+    },
+    {
+      "path": "docs/project_docs/product/PRODUCT_DESIGN.md",
+      "bytes": 27132,
+      "sha256": "5d37b3ace02fe321e0366d9222e992171dfebe50af14c31a3c7e596c177afc3d"
+    },
+    {
+      "path": "docs/project_docs/product/PRODUCT_DEVELOPMENT.md",
+      "bytes": 42641,
+      "sha256": "cca9f1f21307cbec8a4a51904f98663df08e4d4c8904b4f335c669f0579d5fc5"
+    },
+    {
+      "path": "docs/project_docs/PROJECT_HANDOFF.md",
+      "bytes": 15678,
+      "sha256": "4038180e88d91af54519e9b3b85d2bb4709da0408bb855de0b3dce7762b26bdf"
+    },
+    {
+      "path": "docs/project_docs/README.md",
+      "bytes": 4326,
+      "sha256": "073c0639a5248d524fc8c0356430104e70d16aa62b0357bdadc78053743ecaa0"
+    },
+    {
+      "path": "docs/project_docs/release/GITHUB_RELEASE_GUIDE.md",
+      "bytes": 3675,
+      "sha256": "c033531c5421da8afb7b63325ccb26d91bc679a1765f41d630eb0f2956e43355"
+    },
+    {
+      "path": "docs/project_docs/release/PUBLIC_SOURCE_AUDIT_2026-10-11.md",
+      "bytes": 3173,
+      "sha256": "73876a88501937c835d0cc845f2aea1710ac85511354fc6fe642e3db89a05a97"
+    },
+    {
+      "path": "docs/project_docs/release/RELEASE_NOTES_0.8.0.md",
+      "bytes": 1246,
+      "sha256": "02b88dcad631278f2c9fd09bf62661bf97db5236855286c732885b7b417b2b6a"
+    },
+    {
+      "path": "docs/project_docs/release/RELEASE_NOTES_0.8.1.md",
+      "bytes": 1091,
+      "sha256": "a9d53b1808282f59c495d68900d1ce126f380e417f3ebac60371994606dbb482"
+    },
+    {
+      "path": "docs/project_docs/testing/ASTRACODE_UI_OBSERVABILITY_TEST_2026-08-08.md",
+      "bytes": 4318,
+      "sha256": "601d6e1a8fa65728aee68076c595b0af4c309838fd4d75d62f20e3304bb3fc1b"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/forced_todo_20260809_122927.json",
+      "bytes": 410,
+      "sha256": "19cbe383b9016dd1d16e3029130867ed2f739064da004bdf6866f6cfafc75d4e"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/forced_todo_20260809_123156.json",
+      "bytes": 498,
+      "sha256": "bed9998448342ed273a2d5ef29cdc677774f38ebfb1e7ebb1da3a311daf1eefd"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/forced_todo_20260809_123504.json",
+      "bytes": 549,
+      "sha256": "698190b3c28291ef6225c19e53d3f83bc2a90771e3b9d48c40cd4a0b3480f767"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/full_suite_20260808_153808.json",
+      "bytes": 6951,
+      "sha256": "f45eab002e6f86ff071057f6346fd8aacad6ab1024432376a87b19b1d7ec71cd"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/full_suite_20260808_155113.json",
+      "bytes": 12770,
+      "sha256": "b5f4946b8ad70725dc801b727d92720f841325d79948fdf39379d5151b014ded"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/full_suite_20260808_155745.json",
+      "bytes": 11784,
+      "sha256": "a50e22d636e4966992f99693fa9ef2425b62fbb9d40e1aade791482c0e8b0d1d"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/full_suite_20260808_164734.json",
+      "bytes": 11649,
+      "sha256": "948155f4ae8a42368b4d07b867f8ff1dabcb5b37cfca0ac65d0d6972d04f5589"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/todo_mode_crud_20260809_125905.json",
+      "bytes": 1779,
+      "sha256": "e6ebeadc1e27069f3b532f58917200878e66c2078a57aa1f9f25bebc63464ce7"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/todo_mode_crud_20260809_130035.json",
+      "bytes": 642,
+      "sha256": "93b8e3ac79d524684c94d93df25580d7cc6a28f160e07521a0d1fb80c7145d3b"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/verifier_changes_recovery_20260809_025503.json",
+      "bytes": 1503,
+      "sha256": "0005153fe62c84f4e058892c4055f033d454ac032fbeae0c068c36e219983657"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/verifier_changes_recovery_20260809_025650.json",
+      "bytes": 1403,
+      "sha256": "0ebbf54f0ce9e7cea04660d4868660061ecca3ce9b08ed776e21415266c81146"
+    },
+    {
+      "path": "docs/project_docs/testing/evidence/verifier_changes_recovery_20260809_025730.json",
+      "bytes": 1472,
+      "sha256": "2c41892b4a17855df604109628e3021931f62a3d159d2c23df41cf8414b96d76"
+    },
+    {
+      "path": "docs/project_docs/testing/FULL_FUNCTION_REAL_API_TEST_2026-08-08.md",
+      "bytes": 6572,
+      "sha256": "a062f3f7935ab688d879fcac1d45dba9d80c35ec61d2bdd2e08789553a71fe10"
+    },
+    {
+      "path": "docs/project_docs/testing/REAL_API_CRUD_TEST_2026-08-08.md",
+      "bytes": 2351,
+      "sha256": "ffa14c04442fe482f4f442e6364315d452d704b180ddc3906f7b54be38a0282f"
+    },
+    {
+      "path": "docs/project_docs/testing/TODO_MODE_REAL_API_TEST_2026-08-09.md",
+      "bytes": 3189,
+      "sha256": "f3927805bf50fa3441193385a9680ac19cca0e3c98c8a58ced34cc1833ef72e1"
+    },
+    {
+      "path": "docs/project_docs/testing/VERIFIER_DIFF_RECOVERY_REAL_API_TEST_2026-08-09.md",
+      "bytes": 1837,
+      "sha256": "926a58b24d5015f5dac1dcfef7048a6ddf8e3e20317475c743e26094a0de9096"
+    },
+    {
+      "path": "legacy/s_full_monolith_2026-08-05.py",
+      "bytes": 62550,
+      "sha256": "f01f82d3dce469b3ba29a6cabbb33d8fe670b41b0711274851d316c9b0d90aa6"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1132,
+      "sha256": "9426f6a94869735e36216bfe128221a335ae962c8fc67a12975ddfd5fddb7e65"
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1168,
+      "sha256": "2b690e678582fcd1c6213351f5168743482275d9e99ec9d227d2c45346528ae0"
+    },
+    {
+      "path": "packaging/build_windows.ps1",
+      "bytes": 2726,
+      "sha256": "6033f179376e83d4033e0cdf0f4e9c341faa2781e60599ce2846b012608df782"
+    },
+    {
+      "path": "packaging/export_public.py",
+      "bytes": 7877,
+      "sha256": "52603da123d2eef15797076b6e9fa39f19a67ece1d9ef205f5afb2808f01fb76"
+    },
+    {
+      "path": "packaging/publish_github.ps1",
+      "bytes": 6744,
+      "sha256": "f6c9a0530eade80728b0240963e8addb27edc4a1ccc84b717edfa47232aad479"
+    },
+    {
+      "path": "packaging/sidecar_entry.py",
+      "bytes": 363,
+      "sha256": "265e608b914796dcc3775af6b16e222720e40cb254ee97a3a7a6cead848bddee"
+    },
+    {
+      "path": "PRIVACY.md",
+      "bytes": 1281,
+      "sha256": "40d1e76fc1a8201a021de853a6fe22b9286e3a0cc2ce12f7a850828b12816366"
+    },
+    {
+      "path": "README.md",
+      "bytes": 13752,
+      "sha256": "5e279638c9254c465c455fd51b62ac9bcd33773fb0ecba4270d93e35b9b130f7"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 35,
+      "sha256": "f5a4ac2a8570693310bad54af31ca0b80113477c2de6e56229ad9dd8ae4189ad"
+    },
+    {
+      "path": "requirements-release.txt",
+      "bytes": 64,
+      "sha256": "cc77cc9235750f34eb4435f4990b6ddbf8a293783387e4d48e3ff1e6356a6497"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 52,
+      "sha256": "b276ae93133e46ee1a420d84e842faa8da8b9ac4b2fe10908722457df3e056c8"
+    },
+    {
+      "path": "run.ps1",
+      "bytes": 637,
+      "sha256": "2e770e1e4695097a02b9bf533e19533341fcb833a07508a22778f8f30eca6c9f"
+    },
+    {
+      "path": "run_desktop.ps1",
+      "bytes": 1437,
+      "sha256": "446b3aea5b8427c5bd4312c2876acef81394b70d833040e54ea5a4324439fdee"
+    },
+    {
+      "path": "run_tests.ps1",
+      "bytes": 262,
+      "sha256": "49a610fb9c1872e177282097e93a1042faa819729527deaf47e071c1ac7d8182"
+    },
+    {
+      "path": "s_full.py",
+      "bytes": 1386,
+      "sha256": "6f3482acd6205d4a0d32a6364e5ff3a0c572812b214f9aa4ea0ae9309bb33ba3"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 757,
+      "sha256": "112e419d06886d44df5b430313496ee80fcf5ca39bd9df61cf59e1fd3cf2b46b"
+    },
+    {
+      "path": "skills/agent-builder/references/agent-philosophy.md",
+      "bytes": 8184,
+      "sha256": "444927fef2b5a43c0e2c6193c2325192b63b6de3ea89b62684073ad5a42a6b0d"
+    },
+    {
+      "path": "skills/agent-builder/references/minimal-agent.py",
+      "bytes": 4297,
+      "sha256": "cc6933c76e1283cc322dbfe8f808b9bc253301f7ca2cbcf3cb99cc4aa49cf6d5"
+    },
+    {
+      "path": "skills/agent-builder/references/subagent-pattern.py",
+      "bytes": 8016,
+      "sha256": "4dd6bbc54172c2012e7c21767fc262be711c361550258aa8b35573fec1f31488"
+    },
+    {
+      "path": "skills/agent-builder/references/tool-templates.py",
+      "bytes": 8152,
+      "sha256": "425bc8e8914b23188d7381e942291e0b52f41ae9ac4841752e35598dae3ea94f"
+    },
+    {
+      "path": "skills/agent-builder/scripts/init_agent.py",
+      "bytes": 10212,
+      "sha256": "d03b97bbb68c0828059c44eac8343a8744b1dc1f3a377ec25e302e2417666a46"
+    },
+    {
+      "path": "skills/agent-builder/SKILL.md",
+      "bytes": 4842,
+      "sha256": "e0e91f122790ef80c635ff60e8a4d7e8fc0c10a29f223fc724fc71be0f355cd2"
+    },
+    {
+      "path": "skills/code-review/SKILL.md",
+      "bytes": 4423,
+      "sha256": "c90477d5c78a35573646ca6f4ea43ab091c4c5c0f7d0432df19c48eb623d7c40"
+    },
+    {
+      "path": "skills/mcp-builder/SKILL.md",
+      "bytes": 5131,
+      "sha256": "a4595a86df34e8252343c69f68555cb779545fbe43b02710dc2e5a70c57f7af3"
+    },
+    {
+      "path": "skills/pdf/SKILL.md",
+      "bytes": 2693,
+      "sha256": "764c1268d7e20aef2eaa5fe7e43a0d60ec86afc5631c2e795539eeea6c11614d"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 348,
+      "sha256": "0eb507c9fad35f26e47b13e33b0e9e5016573555a08be347be1e21a54f326496"
+    },
+    {
+      "path": "tests/helpers.py",
+      "bytes": 851,
+      "sha256": "51a9c027b4dc7a292e06530854204820717345768b193b5d42be958e5f6f1e4e"
+    },
+    {
+      "path": "tests/live_deepseek_crud.py",
+      "bytes": 4374,
+      "sha256": "8dabf6bf1ea612715192081d89e0cceda1641fda6a3d17db712c786729310c30"
+    },
+    {
+      "path": "tests/live_deepseek_full_suite.py",
+      "bytes": 20098,
+      "sha256": "cb074c39f9faabe6c21f32b1b79c62e26c532aa011ab992966db8e6bccf37518"
+    },
+    {
+      "path": "tests/live_forced_todo.py",
+      "bytes": 9806,
+      "sha256": "4820584b9d326473b422b44aa6ad312a6f6d4ee2cdf5e6995b35c362ef59e087"
+    },
+    {
+      "path": "tests/live_verifier_changes_recovery.py",
+      "bytes": 6934,
+      "sha256": "5f1a5c1013b37096ac1adc5f673bf9822f85aad6e6496a4702e4a90a91655d91"
+    },
+    {
+      "path": "tests/test_agent_permission_reuse.py",
+      "bytes": 2594,
+      "sha256": "7153bf60ab703fb9ba5455176f41c149ecddfdd88e49ebc9736c2f5f8d94a73b"
+    },
+    {
+      "path": "tests/test_change_tracking.py",
+      "bytes": 2001,
+      "sha256": "5ff77af5ca9b6638da73c9c9999b75173423e12b6522f6251c164abd56c56b5b"
+    },
+    {
+      "path": "tests/test_completion.py",
+      "bytes": 11357,
+      "sha256": "afaede0ae9524a0772df06f1feed24a248e59bdb9a3b835f1a0ca13d8f3a5d6a"
+    },
+    {
+      "path": "tests/test_concurrency.py",
+      "bytes": 1074,
+      "sha256": "1f8a59452a11adaad522e5e1771d657d3571279ed9287c65ca5e739fcc1b76d8"
+    },
+    {
+      "path": "tests/test_context.py",
+      "bytes": 2455,
+      "sha256": "620675836627a1d5a67eb5aa35b0c89007cc3069c9c5aa2cd3ffa593da7f77ad"
+    },
+    {
+      "path": "tests/test_fake_client.py",
+      "bytes": 1359,
+      "sha256": "a0d904411d59c6cbccc9e591d9ede1f1225341dc4f8d620da2b9ec1d824fe200"
+    },
+    {
+      "path": "tests/test_message_protocol.py",
+      "bytes": 5987,
+      "sha256": "4caf711822bbb96ad39877f5b62513fab56c80657814b854e2aa329bbec3fb52"
+    },
+    {
+      "path": "tests/test_naming.py",
+      "bytes": 2082,
+      "sha256": "db11b8e6edae351acf71d733142cb5ca1fffafcbace8033238233f4ab3f2ae9d"
+    },
+    {
+      "path": "tests/test_permissions.py",
+      "bytes": 3406,
+      "sha256": "c964a806749371bf766cff54629ecebf83917ca139227f2480bacc32c85eb8a7"
+    },
+    {
+      "path": "tests/test_planning.py",
+      "bytes": 3224,
+      "sha256": "32cc6760cc26ed8427c244a5b948e7764063a1d36f2460e41a296f002e20debb"
+    },
+    {
+      "path": "tests/test_public_export.py",
+      "bytes": 2285,
+      "sha256": "4120e7c41c28c34cea356553d311b572e3f63693098bae7fad303c513bb930fa"
+    },
+    {
+      "path": "tests/test_response_content.py",
+      "bytes": 834,
+      "sha256": "010b2a777d219052c1cdf9bf7fa5595d6cd4bad818eb0faadbb152e622d537a7"
+    },
+    {
+      "path": "tests/test_session_store.py",
+      "bytes": 10291,
+      "sha256": "08ca8847eabc10fd77e338827b55c8ed1dea03b890d197dc5abf86ac253b3af5"
+    },
+    {
+      "path": "tests/test_settings.py",
+      "bytes": 2239,
+      "sha256": "7cbd97b0c640abb7b927435596979b4a60da30154bda0d42d49f83db8df794f7"
+    },
+    {
+      "path": "tests/test_sidecar.py",
+      "bytes": 12824,
+      "sha256": "95cf83b075e8ce86aa754bde81df1f67994e1178543728c972cbe3fc153d4de4"
+    },
+    {
+      "path": "tests/test_thinking_config.py",
+      "bytes": 1709,
+      "sha256": "57b0fa2a354ae2520dbd5ff15a493e0b7c56a384eb26bd7328e46c8b75e44479"
+    },
+    {
+      "path": "tests/test_tool_validation.py",
+      "bytes": 2128,
+      "sha256": "dd2a714318c0fc579f05ba894b44a266af2c6c7376414b5212721675909410f2"
+    },
+    {
+      "path": "tests/test_verifier.py",
+      "bytes": 1971,
+      "sha256": "2cd2027f4a6cdbddbfe30a26592329a8d99446fd7a4b9b45dc37d996ebf23181"
+    },
+    {
+      "path": "tests/test_workspace.py",
+      "bytes": 4544,
+      "sha256": "5bc03f7d2e4c6978fa773142e266a42e38db30e73d2f8712468471f4df02ca2b"
+    },
+    {
+      "path": "upstream/LICENSE",
+      "bytes": 1089,
+      "sha256": "4db5f1ba8b6eedf200a20f2ad1ed2a6a9ff4ddb16b17ea104b12cd071bc542e4"
+    },
+    {
+      "path": "upstream/s_full.py",
+      "bytes": 37195,
+      "sha256": "c9d6145f5cd97f36141aaf0d56b7af47209c992e61599f2b6f1b0ce5619c74db"
+    },
+    {
+      "path": "双击启动桌面端.bat",
+      "bytes": 193,
+      "sha256": "271aa5fe9fa948038cbd7cd8b4a9ed4ac29a4e04fa1381575df72ca4e2d4ce25"
+    }
+  ],
+  "excluded": [
+    "credentials",
+    "runtime data",
+    "career materials",
+    "dependencies",
+    "build artifacts",
+    "personal screenshots"
+  ],
+  "checks": {
+    "credential_patterns": "passed",
+    "json": "passed",
+    "relative_links": "passed"
+  }
+}

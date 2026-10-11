@@ -1,0 +1,44 @@
+{
+  "suite": "AstraCode verifier/change/recovery live",
+  "workspace": "<TEST_ROOT>\\astracode_live_new_87j4kl9o",
+  "started_at": "2026-08-09T02:56:03.424790+08:00",
+  "steps": [
+    {
+      "name": "real_agent_create",
+      "passed": false,
+      "seconds": 34.96,
+      "status": "round_limit"
+    },
+    {
+      "name": "real_ai_strict_verifier",
+      "passed": false,
+      "verdict": "needs_fix",
+      "summary": "用户要求在当前目录创建 mini_code_tutorial.md（含 add(a, b) 示例和三条学习要点）并读取确认，且不创建其他文件。实际工作区为空目录，目标文件不存在，写入被环境拒绝，读取也失败；变更集显示 0 文件、0 改动。核心需求完全未达成，且 lead 答复计划用“删除工具”伪造变更证据，属于虚构结果，必须返工实际创建文件。",
+      "rounds": 3
+    },
+    {
+      "name": "diff_manifest",
+      "passed": false,
+      "totals": {
+        "files": 0,
+        "additions": 0,
+        "deletions": 0,
+        "created": 0,
+        "modified": 0,
+        "deleted": 0
+      }
+    },
+    {
+      "name": "one_click_undo_core",
+      "passed": true,
+      "state": "rolled_back"
+    },
+    {
+      "name": "restart_recovery_checkpoint",
+      "passed": true,
+      "state": "interrupted"
+    }
+  ],
+  "passed": false,
+  "cleaned": true
+}

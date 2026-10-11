@@ -1,0 +1,58 @@
+{
+  "suite": "AstraCode verifier/change/recovery live",
+  "workspace": "<TEST_ROOT>\\astracode_live_new_cpruznzq",
+  "started_at": "2026-08-09T02:57:17.312049+08:00",
+  "steps": [
+    {
+      "name": "real_agent_create",
+      "passed": true,
+      "seconds": 5.0,
+      "status": "completed"
+    },
+    {
+      "name": "real_ai_strict_verifier",
+      "passed": true,
+      "verdict": "pass",
+      "summary": "当前工作目录中存在 mini_code_tutorial.md，内容为简洁的中文 Python 函数教程，包含 add(a, b) 示例（定义、调用及输出注释）和三条学习要点，与用户请求完全一致。文件已通过 read_file 实际读取验证。",
+      "rounds": 3
+    },
+    {
+      "name": "diff_manifest",
+      "passed": true,
+      "totals": {
+        "files": 1,
+        "additions": 21,
+        "deletions": 0,
+        "created": 1,
+        "modified": 0,
+        "deleted": 0
+      }
+    },
+    {
+      "name": "one_click_undo_core",
+      "passed": true,
+      "state": "rolled_back"
+    },
+    {
+      "name": "restart_recovery_checkpoint",
+      "passed": true,
+      "state": "interrupted"
+    }
+  ],
+  "agent_tool_evidence": [
+    {
+      "tool": "write_file",
+      "ok": true,
+      "summary": null,
+      "reason": null
+    },
+    {
+      "tool": "read_file",
+      "ok": true,
+      "summary": null,
+      "reason": null
+    }
+  ],
+  "passed": true,
+  "cleaned": true
+}

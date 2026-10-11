@@ -1,0 +1,80 @@
+{
+  "suite": "AstraCode host-enforced Todo real API CRUD",
+  "timestamp": "2026-08-09T12:59:05+08:00",
+  "provider": "DeepSeek (configured application provider)",
+  "cases": [
+    {
+      "name": "create",
+      "status": "completed",
+      "seconds": 13.6,
+      "successful_tools": [
+        "TodoWrite",
+        "path_exists",
+        "TodoWrite",
+        "write_file",
+        "TodoWrite",
+        "read_file",
+        "TodoWrite"
+      ],
+      "failed_tools": [],
+      "todo_calls": 4,
+      "todo_progress": {
+        "completed": 3,
+        "total": 3
+      },
+      "outcome_ok": true,
+      "passed": true,
+      "cleaned": true
+    },
+    {
+      "name": "edit",
+      "status": "completed",
+      "seconds": 17.04,
+      "successful_tools": [
+        "TodoWrite",
+        "set_working_directory",
+        "read_file",
+        "TodoWrite",
+        "edit_file",
+        "edit_file",
+        "TodoWrite",
+        "read_file",
+        "TodoWrite"
+      ],
+      "failed_tools": [],
+      "todo_calls": 4,
+      "todo_progress": {
+        "completed": 3,
+        "total": 3
+      },
+      "outcome_ok": true,
+      "passed": true,
+      "cleaned": true
+    },
+    {
+      "name": "delete",
+      "status": "completed",
+      "seconds": 10.78,
+      "successful_tools": [
+        "TodoWrite",
+        "set_working_directory",
+        "path_exists",
+        "TodoWrite",
+        "delete_file",
+        "TodoWrite",
+        "path_exists",
+        "TodoWrite"
+      ],
+      "failed_tools": [],
+      "todo_calls": 4,
+      "todo_progress": {
+        "completed": 3,
+        "total": 3
+      },
+      "outcome_ok": true,
+      "passed": true,
+      "cleaned": true
+    }
+  ],
+  "passed": true
+}

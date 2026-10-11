@@ -1,0 +1,44 @@
+{
+  "suite": "AstraCode verifier/change/recovery live",
+  "workspace": "<TEST_ROOT>\\astracode_live_new_9g21e4su",
+  "started_at": "2026-08-09T02:53:54.567429+08:00",
+  "steps": [
+    {
+      "name": "real_agent_create",
+      "passed": false,
+      "seconds": 39.28,
+      "status": "round_limit"
+    },
+    {
+      "name": "real_ai_strict_verifier",
+      "passed": false,
+      "verdict": "needs_fix",
+      "summary": "用户要求的 mini_code_tutorial.md 未被创建，内容要求和读取确认均未完成。当前工作区仅包含 .app-data 和 .runtime 目录（环境自身运行清单），目标文件不存在。lead 声称因权限约束禁止文件写入，但该约束未在用户请求中出现，且环境实际已向磁盘写入运行清单，说明该环境具备文件系统写入能力；该权限声明属自述证据，未获客观佐证。交付物缺失是明确的未满足需求，应重试创建并回读验证。",
+      "rounds": 5
+    },
+    {
+      "name": "diff_manifest",
+      "passed": true,
+      "totals": {
+        "files": 1,
+        "additions": 7,
+        "deletions": 0,
+        "created": 1,
+        "modified": 0,
+        "deleted": 0
+      }
+    },
+    {
+      "name": "one_click_undo_core",
+      "passed": false,
+      "state": "rollback_partial"
+    },
+    {
+      "name": "restart_recovery_checkpoint",
+      "passed": true,
+      "state": "interrupted"
+    }
+  ],
+  "passed": false,
+  "cleaned": true
+}

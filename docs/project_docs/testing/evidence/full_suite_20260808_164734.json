@@ -1,0 +1,493 @@
+{
+  "suite": "s_full real DeepSeek full acceptance",
+  "started_at": "2026-08-08T16:47:34+08:00",
+  "model": "deepseek-v4-flash",
+  "temporary_root": "<TEST_ROOT>\\s_full_live_full_vjis62wd",
+  "cases": [
+    {
+      "name": "crud_todo_and_command",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 10.62,
+      "tools": {
+        "set_working_directory": 1,
+        "TodoWrite": 4,
+        "write_file": 2,
+        "bash": 1,
+        "read_file": 1
+      },
+      "tool_outcomes": {
+        "set_working_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "TodoWrite": {
+          "passed": 4,
+          "failed": 0
+        },
+        "write_file": {
+          "passed": 2,
+          "failed": 0
+        },
+        "bash": {
+          "passed": 1,
+          "failed": 0
+        },
+        "read_file": {
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "missing_tools": {},
+      "assertion": "calculator.py、test_calculator.py 存在，Todo 全部完成",
+      "model": {
+        "calls": 6,
+        "failures": 0,
+        "duration_ms": 9900,
+        "stop_reasons": {
+          "tool_use": 5,
+          "end_turn": 1
+        }
+      },
+      "completion": [
+        {
+          "action": "complete",
+          "status": "completed",
+          "reason": "contract_satisfied",
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "name": "persistent_tasks_and_skill",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 10.97,
+      "tools": {
+        "task_create": 2,
+        "task_list": 1,
+        "task_update": 1,
+        "task_get": 1,
+        "load_skill": 1
+      },
+      "tool_outcomes": {
+        "task_create": {
+          "passed": 2,
+          "failed": 0
+        },
+        "task_list": {
+          "passed": 1,
+          "failed": 0
+        },
+        "task_update": {
+          "passed": 1,
+          "failed": 0
+        },
+        "task_get": {
+          "passed": 1,
+          "failed": 0
+        },
+        "load_skill": {
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "missing_tools": {},
+      "assertion": "至少两个持久任务，且存在 completed 任务",
+      "model": {
+        "calls": 6,
+        "failures": 0,
+        "duration_ms": 10936,
+        "stop_reasons": {
+          "tool_use": 5,
+          "end_turn": 1
+        }
+      },
+      "completion": [
+        {
+          "action": "complete",
+          "status": "completed",
+          "reason": "contract_satisfied",
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "name": "single_explore_subagent",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 47.7,
+      "tools": {
+        "list_directory": 1,
+        "path_exists": 1,
+        "task": 1,
+        "write_file": 1,
+        "read_file": 1
+      },
+      "tool_outcomes": {
+        "list_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "path_exists": {
+          "passed": 1,
+          "failed": 0
+        },
+        "task": {
+          "passed": 1,
+          "failed": 0
+        },
+        "write_file": {
+          "passed": 1,
+          "failed": 0
+        },
+        "read_file": {
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "missing_tools": {},
+      "assertion": "单子 Agent 报告存在并包含 parse 分析",
+      "model": {
+        "calls": 5,
+        "failures": 0,
+        "duration_ms": 15643,
+        "stop_reasons": {
+          "tool_use": 4,
+          "end_turn": 1
+        }
+      },
+      "completion": [
+        {
+          "action": "complete",
+          "status": "completed",
+          "reason": "contract_satisfied",
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "name": "multiple_explore_subagents",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 95.59,
+      "tools": {
+        "set_working_directory": 1,
+        "list_directory": 1,
+        "task": 2,
+        "write_file": 1,
+        "read_file": 1
+      },
+      "tool_outcomes": {
+        "set_working_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "list_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "task": {
+          "passed": 2,
+          "failed": 0
+        },
+        "write_file": {
+          "passed": 1,
+          "failed": 0
+        },
+        "read_file": {
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "missing_tools": {},
+      "assertion": "多子 Agent 报告包含两个独立审查章节",
+      "model": {
+        "calls": 5,
+        "failures": 0,
+        "duration_ms": 25139,
+        "stop_reasons": {
+          "tool_use": 4,
+          "end_turn": 1
+        }
+      },
+      "completion": [
+        {
+          "action": "complete",
+          "status": "completed",
+          "reason": "contract_satisfied",
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "name": "background_task",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 10.01,
+      "tools": {
+        "set_working_directory": 1,
+        "background_run": 1,
+        "check_background": 3,
+        "read_file": 1
+      },
+      "tool_outcomes": {
+        "set_working_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "background_run": {
+          "passed": 1,
+          "failed": 0
+        },
+        "check_background": {
+          "passed": 3,
+          "failed": 0
+        },
+        "read_file": {
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "missing_tools": {},
+      "assertion": "后台命令完成且结果文件内容正确",
+      "model": {
+        "calls": 6,
+        "failures": 0,
+        "duration_ms": 10002,
+        "stop_reasons": {
+          "tool_use": 5,
+          "end_turn": 1
+        }
+      },
+      "completion": [
+        {
+          "action": "complete",
+          "status": "completed",
+          "reason": "contract_satisfied",
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "name": "multiple_teammates",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 15.87,
+      "tools": {
+        "set_working_directory": 1,
+        "spawn_teammate": 2,
+        "list_teammates": 2,
+        "bash": 1,
+        "path_exists": 2,
+        "read_file": 2
+      },
+      "tool_outcomes": {
+        "set_working_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "spawn_teammate": {
+          "passed": 2,
+          "failed": 0
+        },
+        "list_teammates": {
+          "passed": 2,
+          "failed": 0
+        },
+        "bash": {
+          "passed": 1,
+          "failed": 0
+        },
+        "path_exists": {
+          "passed": 2,
+          "failed": 0
+        },
+        "read_file": {
+          "passed": 2,
+          "failed": 0
+        }
+      },
+      "missing_tools": {},
+      "assertion": "两个真实 teammate 均创建了各自文件",
+      "model": {
+        "calls": 7,
+        "failures": 0,
+        "duration_ms": 10213,
+        "stop_reasons": {
+          "tool_use": 6,
+          "end_turn": 1
+        }
+      },
+      "completion": [
+        {
+          "action": "complete",
+          "status": "completed",
+          "reason": "contract_satisfied",
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "name": "plan_readonly_then_execute",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 39.72,
+      "plan": {
+        "title": "新增 slugify 函数及 assert 测试",
+        "steps": 2,
+        "readonly": true
+      },
+      "tools": {
+        "list_directory": 1,
+        "set_working_directory": 1,
+        "read_file": 2,
+        "write_file": 2,
+        "bash": 2
+      },
+      "tool_outcomes": {
+        "list_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "set_working_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "read_file": {
+          "passed": 2,
+          "failed": 0
+        },
+        "write_file": {
+          "passed": 2,
+          "failed": 0
+        },
+        "bash": {
+          "passed": 2,
+          "failed": 0
+        }
+      },
+      "model": {
+        "calls": 9,
+        "failures": 0,
+        "duration_ms": 38111,
+        "stop_reasons": {
+          "tool_use": 7,
+          "end_turn": 2
+        }
+      },
+      "completion": [
+        {
+          "action": "complete",
+          "status": "completed",
+          "reason": "contract_satisfied",
+          "missing_evidence": []
+        }
+      ],
+      "assertion": "Plan 阶段无写入，批准执行后代码和测试均存在"
+    },
+    {
+      "name": "chat_mode_directory_selection",
+      "status": "passed",
+      "agent_status": "completed",
+      "seconds": 4.2,
+      "tools": {
+        "set_working_directory": 1,
+        "write_file": 1,
+        "read_file": 1
+      },
+      "tool_outcomes": {
+        "set_working_directory": {
+          "passed": 1,
+          "failed": 0
+        },
+        "write_file": {
+          "passed": 1,
+          "failed": 0
+        },
+        "read_file": {
+          "passed": 1,
+          "failed": 0
+        }
+      },
+      "missing_tools": {},
+      "assertion": "聊天模式先选择目录，再成功写入文件",
+      "model": {
+        "calls": 4,
+        "failures": 0,
+        "duration_ms": 4187,
+        "stop_reasons": {
+          "tool_use": 3,
+          "end_turn": 1
+        }
+      },
+      "completion": [
+        {
+          "action": "complete",
+          "status": "completed",
+          "reason": "contract_satisfied",
+          "missing_evidence": []
+        }
+      ]
+    },
+    {
+      "name": "permission_boundaries",
+      "status": "passed",
+      "seconds": 0.0,
+      "assertion": "安全模式拒绝写入；审批模式仅高风险询问；完全访问仍拦截 critical",
+      "approval_prompts": [
+        {
+          "tool": "read_file",
+          "risk": "HIGH",
+          "actor": "lead"
+        }
+      ]
+    },
+    {
+      "name": "automatic_naming",
+      "status": "passed",
+      "seconds": 1.41,
+      "provider_model": "deepseek-ai/DeepSeek-V4-Flash",
+      "title": "测试Todo子Agent与Plan"
+    }
+  ],
+  "cleaned": true,
+  "trace_totals": {
+    "tools": {
+      "set_working_directory": 5,
+      "TodoWrite": 4,
+      "write_file": 6,
+      "bash": 4,
+      "read_file": 8,
+      "task_create": 2,
+      "task_list": 1,
+      "task_update": 1,
+      "task_get": 1,
+      "load_skill": 1,
+      "list_directory": 3,
+      "path_exists": 3,
+      "task": 3,
+      "background_run": 1,
+      "check_background": 3,
+      "spawn_teammate": 2,
+      "list_teammates": 2
+    },
+    "model": {
+      "calls": 44,
+      "failures": 0,
+      "duration_ms": 119944,
+      "stop_reasons": {
+        "tool_use": 36,
+        "end_turn": 8
+      }
+    },
+    "protocol_repairs": 0,
+    "tool_failures": 0
+  },
+  "finished_at": "2026-08-08T16:51:36+08:00",
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10
+  }
+}
