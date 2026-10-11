@@ -15,7 +15,8 @@ class SettingsTests(unittest.TestCase):
 
     def test_optional_state_root_keeps_runtime_metadata_out_of_project(self):
         with tempfile.TemporaryDirectory() as temp:
-            root = Path(temp)
+            # Windows CI may provide a short 8.3 temp path; compare canonical paths.
+            root = Path(temp).resolve()
             settings = make_settings(root / "project", state_root=root / "app-data")
             self.assertEqual(settings.task_dir, root / "app-data" / ".tasks")
             self.assertEqual(settings.team_dir, root / "app-data" / ".team")

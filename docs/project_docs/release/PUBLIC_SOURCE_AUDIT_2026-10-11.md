@@ -37,4 +37,6 @@
 
 ## 公开后的后续事项
 
+首次 GitHub 干净 Runner 测试为 83 passed / 1 failed。失败是测试把 Windows 临时目录短路径 `RUNNER~1` 与已规范化的 `runneradmin` 长路径按字符串比较，并非 Skill 目录错误。测试根目录统一 `.resolve()` 后再构造预期路径，保持运行时正常规范化逻辑。修复通过普通后续提交发布，不改写已有历史。
+
 查看 GitHub CI；确认 README 渲染与 Release 附件；启用私密漏洞报告；在无开发环境的 Windows 机器验收安装/卸载。代码签名、自动更新、跨平台分发和真正 OS 沙箱仍未实现。

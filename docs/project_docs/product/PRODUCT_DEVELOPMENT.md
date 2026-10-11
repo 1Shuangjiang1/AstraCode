@@ -511,6 +511,8 @@ GitHub 上传脚本使用本机已登录的 Git Credential Manager，只在进�
 
 公开上传时另发现旧 `.gitignore` 中 `release/` 同时忽略了 `docs/project_docs/release/`，造成发布文档无法加入 Git。改为根目录限定的 `/release/`，既排除安装包又保留发布说明。失败时远端仅创建了空仓库，尚未推送提交；修复后重新导出并正常提交。
 
+首次 GitHub CI 另暴露 Windows 临时目录的短长路径差异：83 项通过，`test_optional_state_root_keeps_runtime_metadata_out_of_project` 把 `RUNNER~1` 与规范化的 `runneradmin` 当成不同路径。测试根目录改为 `.resolve()` 后比较，保留原有隔离断言和运行时行为；通过后续提交修复。
+
 ## 5. 测试策略
 
 ### 自动化
