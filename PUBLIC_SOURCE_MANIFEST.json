@@ -593,13 +593,13 @@
     },
     {
       "path": "docs/project_docs/product/PRODUCT_DESIGN.md",
-      "bytes": 27132,
-      "sha256": "5d37b3ace02fe321e0366d9222e992171dfebe50af14c31a3c7e596c177afc3d"
+      "bytes": 27183,
+      "sha256": "33800c4fa26da9138c6ebd2acf620fd94ad416902d67521f9894f06a1757b2e3"
     },
     {
       "path": "docs/project_docs/product/PRODUCT_DEVELOPMENT.md",
-      "bytes": 42981,
-      "sha256": "9d62ef63658ea5a50a9af7c048d1a02a3ae3ff8862326ce533c019848c7d46cf"
+      "bytes": 43588,
+      "sha256": "3029bac82768bed24adeeecae2d218d1f53a316142d735345fdccd35afaac182"
     },
     {
       "path": "docs/project_docs/PROJECT_HANDOFF.md",
@@ -738,8 +738,8 @@
     },
     {
       "path": "packaging/export_public.py",
-      "bytes": 7877,
-      "sha256": "52603da123d2eef15797076b6e9fa39f19a67ece1d9ef205f5afb2808f01fb76"
+      "bytes": 7896,
+      "sha256": "1bb55aaf4a89c2d92543bc6e755f7cae7f72f5325915fd95782cd06fab5fb49e"
     },
     {
       "path": "packaging/publish_github.ps1",
@@ -758,8 +758,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 13752,
-      "sha256": "5e279638c9254c465c455fd51b62ac9bcd33773fb0ecba4270d93e35b9b130f7"
+      "bytes": 15861,
+      "sha256": "c170b61ab27071405b060cbd3a272baa054ae0a5aad860f64868a62abe59d749"
+    },
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 13810,
+      "sha256": "2128a15c348de3bf1e49eedd6a3b9dc6d5d9f23f0c81655e918a264c5bb53924"
     },
     {
       "path": "requirements-dev.txt",

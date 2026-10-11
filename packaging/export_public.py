@@ -18,7 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 ROOT_FILES = {
-    "README.md", "LICENSE", "NOTICE.md", "CONTRIBUTING.md", "SECURITY.md", "PRIVACY.md",
+    "README.md", "README.zh-CN.md", "LICENSE", "NOTICE.md", "CONTRIBUTING.md", "SECURITY.md", "PRIVACY.md",
     "AGENTS.md", ".gitignore", ".env.example", "requirements.txt", "requirements-dev.txt",
     "requirements-release.txt", "s_full.py", "run.ps1", "run_tests.ps1", "run_desktop.ps1",
     "双击启动桌面端.bat",
